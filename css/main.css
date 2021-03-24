@@ -1,0 +1,45 @@
+/* ======== 1. Reset CSS ======== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+  a, span, i {
+    display: inline-block;
+  }
+
+  a {
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  :focus {
+    outline: none;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  body {
+    color: #494647;
+    font-size: 18px; 
+    font-weight: 400; /* Regular */
+    /* line-height: 1.7; */
+    font-family: 'Khula', sans-serif;
+  }
+
+/* ======== 2. General ======== */
+
+  .container {
+    /* max-width: 1200px; */
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
