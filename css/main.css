@@ -8,11 +8,11 @@
 ul {
     list-style-type: none;
   }
-
+  
   a, span, i {
     display: inline-block;
   }
-
+  
   a {
     text-decoration: none;
     transition: all 0.3s ease;
