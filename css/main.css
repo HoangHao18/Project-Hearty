@@ -8,11 +8,11 @@
 ul {
     list-style-type: none;
   }
-
+  
   a, span, i {
     display: inline-block;
   }
-
+  
   a {
     text-decoration: none;
     transition: all 0.3s ease;
@@ -30,7 +30,7 @@ ul {
     color: #494647;
     font-size: 18px; 
     font-weight: 400; /* Regular */
-    /* line-height: 1.7; */
+    line-height: 1.7;
     font-family: 'Khula', sans-serif;
   }
 
@@ -38,8 +38,16 @@ ul {
 
   .container {
     /* max-width: 1200px; */
-    max-width: 1920px;
+    max-width: 1170px;
     margin: 0 auto;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .padding-top-100{
+    padding-top: 100px;
+  }
+
+  .padding-bottom-100{
+    padding-bottom: 100px;
   }
