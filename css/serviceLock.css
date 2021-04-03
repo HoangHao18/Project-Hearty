@@ -1,0 +1,204 @@
+
+.service-lock-item{
+    /* width: 570px;
+    height: 205px; */
+    width: 542px;
+    height: 195px;
+    background-color: aqua;
+    font-size: 0px;
+    display: inline-block;
+    position: relative;
+}
+
+.service-lock-item:hover{
+    transition: 0.3s;
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px 0 rgb(0 0 0 / 15%);
+}
+
+.service-lock-item .sli-image,
+.service-lock-item .sli-content{
+    display: inline-block;
+    font-size: 12px;
+    height: 100%;
+    vertical-align: middle;
+    position: absolute;
+    
+}
+
+.service-lock-item .sli-image{    
+    width: 41%;
+    background-color: #ffffff;
+    text-align: center;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    box-shadow: 0 6px 40px 0 rgb(0 0 0 / 10%);
+    z-index: 1;
+    left: 0;
+}
+
+.service-lock-item .sli-image span{
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.service-lock-item .sli-image img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.service-lock-item .sli-content{
+    width: 59%;
+    background-color: #fafafa;
+    padding-top: 6.8%; /*39/570*/
+    padding-left: 4.2%; /*24/570*/
+    padding-right: 7%; 
+    text-align: left;
+    right: 0;
+}
+
+.service-lock-item .sli-content .title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #2c323a;
+
+}
+
+.service-lock-item .sli-content .description{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #6f7681;
+    
+}
+
+.comp-service-lock{
+    max-width: 1110px;
+    /* max-height: 910px; */
+    /* background-color: rgb(14, 31, 31); */
+    font-size: 0px;
+    text-align: center;
+}
+
+.comp-service-lock .service-lock-item:nth-child(odd){
+    background-color: aquamarine;
+    margin-right: 2.25%; /*25/1110 2.56*/
+    margin-bottom: 2.25%;
+    
+}
+
+.comp-service-lock .service-lock-item:nth-child(even){
+    margin-bottom: 2.25%;  
+}
+
+.comp-service-lock .service-lock-item:nth-child(7),
+.comp-service-lock .service-lock-item:nth-child(8){
+    margin-bottom: 0;
+ 
+}
+
+@media only screen and (max-width: 320px) {
+    /* /2.5 */
+
+    .service-lock-item{
+        width: 228px;
+        height: 82px;
+    }
+    .service-lock-item .sli-content .description,
+    .service-lock-item .sli-image,
+    .service-lock-item .sli-content{
+        font-size: 5px;
+    }
+
+    .comp-service-lock{
+        max-width: 290px;
+        text-align: center;
+    }
+
+    .service-lock-item .sli-content .title{
+        font-size: 8px;
+    }
+
+    .comp-service-lock .service-lock-item{
+        margin: 0 15px 15px !important;
+        
+    }
+
+    
+    .comp-service-lock .service-lock-item:nth-child(8){
+        margin-bottom: 0;
+    }
+
+    .service-lock-item .sli-image img{
+        width: 60%;
+        height: 60%;
+        object-fit: cover;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 480px) {
+    /* /2.5 */
+
+    .service-lock-item{
+        width: 222px;
+        height: 82px;
+    }
+    .service-lock-item .sli-content .description,
+    .service-lock-item .sli-image,
+    .service-lock-item .sli-content{
+        font-size: 5px;
+    }
+
+    .comp-service-lock{
+        max-width: 460px; 
+        text-align: center;
+    }
+
+    .service-lock-item .sli-content .title{
+        font-size: 8px;
+    }
+
+    
+    /* .comp-service-lock .service-lock-item{
+        margin: 0 15px 15px !important;
+        
+    } */
+
+    
+    /* .comp-service-lock .service-lock-item:nth-child(8){
+        margin-bottom: 0;
+    } */
+
+    .service-lock-item .sli-image img{
+        width: 60%;
+        height: 60%;
+        object-fit: cover;
+    }
+    
+    
+}
+
+@media only screen and (max-width: 1138px) {
+    .comp-service-lock .service-lock-item{
+        margin: 0 15px 15px !important;
+        
+    }
+
+    
+    .comp-service-lock .service-lock-item:nth-child(8){
+        margin-bottom: 0;
+    }
+
+    .service-lock-item .sli-image img{
+        width: 60%;
+        height: 60%;
+        object-fit: cover;
+    }
+}
+
+
+
+
