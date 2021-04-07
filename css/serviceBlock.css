@@ -1,0 +1,121 @@
+.service-block-item{
+    width: 100%;
+    height: 100%;
+    /* background-color: aqua;*/
+} 
+
+.service-block-item:hover{
+    transition: 0.3s;
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px 0 rgb(0 0 0 / 15%);
+}
+
+.service-block-item .sli-image,
+.service-block-item .sli-content{
+    width: 100%;
+    height: 100%;    
+    overflow: hidden; /* */
+}
+
+.service-block-item .sli-image{    
+    background-color: #ffffff;
+    box-shadow: 0 6px 40px 0 rgb(0 0 0 / 10%);
+    z-index: 1;
+    position: relative;
+    text-align: center;  
+}
+
+.service-block-item .sli-image::after{
+    content: '';
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.service-block-item .sli-image img{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.service-block-item .sli-content{
+    background-color: #fafafa;
+    padding-top: 6.8%;/*39/570*/
+    padding-left: 4.2%;/*24/570*/
+    padding-right: 7%; 
+    padding-bottom: 7%;
+    text-align: left;
+    
+}
+
+.service-block-item .sli-content .title{
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #2c323a;
+}
+
+.service-block-item .sli-content .description{
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    color: #6f7681;   
+}
+
+.comp-service-block .row-flex-my [class*="hth-col-"]{
+    min-height: 195px;
+    /* background-color: yellow; */
+  }
+
+.comp-service-block .row-flex-my .hth-col-6:nth-child(odd){
+    margin: 0px 15px 15px 0px; 
+}
+.comp-service-block .row-flex-my .hth-col-6:nth-child(even){
+    margin-bottom: 15px;
+}
+
+.comp-service-block .row-flex-my:nth-child(4) [class*="hth-col-"]{
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 645px) {
+    
+    .comp-service-block .row-2-items{
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .comp-service-block .hth-col-6{
+        width: 100%;
+        height: 100%;
+    }
+
+    .comp-service-block .row-flex-my [class*="hth-col-6"]:nth-child(odd){
+        margin: 0px 0px 15px 0px !important; 
+    } 
+
+    .service-block-item{
+        width: 100%;
+        min-height: 82px;
+    }
+
+    .comp-service-block .row-flex-my [class*="hth-col-"]{
+        min-height: 82px;
+      }
+
+    .service-block-item .sli-content .description,
+    .service-block-item .sli-image,
+    .service-block-item .sli-content{
+        font-size: 12px;
+    }
+
+    .service-block-item .sli-content .title{
+        font-size: 14px;
+    }
+
+    .service-block-item .sli-image img{
+        object-fit: cover;
+    }
+    
+}
+
